@@ -1,66 +1,66 @@
-<h1 align="center">🤖 DevOps AI Agents Platform 🚀</h1>
+<h1 align="center">DevOps AI Agents Platform</h1>
 
 <div align="center">
-  <img src="Images/home.png" alt="DevOps AI Agents Platform Banner" width="800px" />
+ <img src="Images/home.png" alt="DevOps AI Agents Platform Banner" width="800px" />
 </div>
 
 <div align="center">
-  
-  ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-  ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-  ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-  ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
-  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/Anubothu-Aravind/Devops-AI-Agent/graphs/commit-activity)
-  
+ 
+ ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+ ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+ ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+ ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+ ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+ ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+ ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+ 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+ [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
+ [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/Anubothu-Aravind/Devops-AI-Agent/graphs/commit-activity)
+ 
 </div>
 
 <p align="center">
-  <b>🌟 Transform your DevOps workflow with AI-powered automation 🌟</b>
-  <br>
-  <i>A comprehensive platform designed to streamline DevOps operations, automate routine tasks, and provide intelligent insights for your infrastructure and application development.</i>
+ <b>Transform your DevOps workflow with AI-powered automation</b>
+ <br>
+ <i>A comprehensive platform designed to streamline DevOps operations, automate routine tasks, and provide intelligent insights for your infrastructure and application development.</i>
 </p>
 
 <div align="center">
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg?style=flat-square)](https://github.com/Anubothu-Aravind)
+[![Made with Love](https://img.shields.io/badge/Made%20with-Love-red.svg?style=flat-square)](https://github.com/Anubothu-Aravind)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [✨ Features](#-features)
-- [🎯 Why DevOps AI Agents?](#-why-devops-ai-agents)
-- [🛠️ Technology Stack](#️-technology-stack)
-- [🚀 Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation & Setup](#installation--setup)
-  - [Build for Production](#build-for-production)
-- [🏗️ Architecture](#️-architecture)
-- [🧩 Components](#-components)
-- [🧠 AI Integration](#-ai-integration)
-- [📸 Screenshots](#-screenshots)
-- [❓ FAQ](#-faq)
-- [🐛 Troubleshooting](#-troubleshooting)
-- [🗺️ Roadmap](#️-roadmap)
-- [🤝 Contributing](#-contributing)
-- [💬 Support](#-support)
-- [📄 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
-- [📞 Contact](#-contact)
+- [Features](#features)
+- [Why DevOps AI Agents?](#why-devops-ai-agents)
+- [Technology Stack](#technology-stack)
+- [Getting Started](#getting-started)
+ - [Prerequisites](#prerequisites)
+ - [Installation & Setup](#installation--setup)
+ - [Build for Production](#build-for-production)
+- [Architecture](#architecture)
+- [Components](#components)
+- [AI Integration](#ai-integration)
+- [Screenshots](#screenshots)
+- [FAQ](#faq)
+- [Troubleshooting](#troubleshooting)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contact](#contact)
 
 ---
 
-## 🎯 Quick Start
+## Quick Start
 
 Get started with DevOps AI Agents in just 3 steps:
 
@@ -75,29 +75,29 @@ npm install
 npm run dev
 ```
 
-🎉 Open [http://localhost:3000](http://localhost:3000) in your browser to see the platform in action!
+ Open [http://localhost:3000](http://localhost:3000) in your browser to see the platform in action!
 
 ---
 
-## ✨ Features
+## Features
 
 <p align="center">
-  <img src="Images/image.png" alt="DevOps AI Agents Features Overview" width="700px" />
+ <img src="Images/image.png" alt="DevOps AI Agents Features Overview" width="700px" />
 </p>
 
 ### Why Choose DevOps AI Agents Platform?
 
-🤖 **AI-Powered Automation** - Leverage artificial intelligence to automate repetitive tasks and optimize workflows
+ **AI-Powered Automation** - Leverage artificial intelligence to automate repetitive tasks and optimize workflows
 
-⚡ **Real-Time Insights** - Get instant feedback and actionable recommendations from specialized AI agents
+ **Real-Time Insights** - Get instant feedback and actionable recommendations from specialized AI agents
 
-🔒 **Security First** - Built-in security scanning and compliance checks to protect your infrastructure
+ **Security First** - Built-in security scanning and compliance checks to protect your infrastructure
 
-📊 **Comprehensive Monitoring** - Monitor performance, track incidents, and analyze trends in real-time
+ **Comprehensive Monitoring** - Monitor performance, track incidents, and analyze trends in real-time
 
-🚀 **Easy Integration** - Designed to integrate seamlessly with your existing DevOps tools and workflows
+ **Easy Integration** - Designed to integrate seamlessly with your existing DevOps tools and workflows
 
-💡 **Intelligent Recommendations** - AI-driven suggestions to improve code quality, performance, and security
+ **Intelligent Recommendations** - AI-driven suggestions to improve code quality, performance, and security
 
 ### Platform Modules
 
@@ -105,75 +105,75 @@ The platform offers a suite of AI-powered DevOps tools for modern software devel
 
 | Module | Description | Key Capabilities | Preview |
 |--------|-------------|------------------|---------|
-| 🔄 **CI/CD Pipeline** | Automate your continuous integration and delivery pipelines | Workflow optimization, AI-driven analysis, GitHub integration | <img src="Images/ci.png" width="200px" /> |
-| ☁️ **Cloud Infrastructure** | Manage and optimize your cloud resources | Multi-cloud support, cost optimization, incident response | <img src="Images/infra.png" width="200px" /> |
-| 🧪 **Code Analysis** | Analyze your code for quality and security issues | Static analysis, performance insights, code metrics | <img src="Images/image copy.png" width="200px" /> |
-| 🔒 **Security Scanning** | Identify and remediate security vulnerabilities | Vulnerability detection, compliance checks, remediation | |
-| 🐳 **Container Orchestration** | Manage containerized applications and services | Deployment management, resource monitoring, scaling | <img src="Images/Container.png" width="200px" /> |
-| 📊 **Performance Monitoring** | Monitor and optimize application performance | Real-time metrics, anomaly detection, historical trends | <img src="Images/performance.png" width="200px" /> |
-| ⚡ **Load Testing** | Test system performance under various load conditions | Scenario templates, real-time analysis, resource utilization | <img src="Images/loadtest.png" width="200px" /> |
-| 🚨 **Incident Response** | Detect and respond to system incidents automatically | Automated detection, response workflows, post-incident analysis | |
+| **CI/CD Pipeline** | Automate your continuous integration and delivery pipelines | Workflow optimization, AI-driven analysis, GitHub integration | <img src="Images/ci.png" width="200px" /> |
+| **Cloud Infrastructure** | Manage and optimize your cloud resources | Multi-cloud support, cost optimization, incident response | <img src="Images/infra.png" width="200px" /> |
+| **Code Analysis** | Analyze your code for quality and security issues | Static analysis, performance insights, code metrics | <img src="Images/image copy.png" width="200px" /> |
+| **Security Scanning** | Identify and remediate security vulnerabilities | Vulnerability detection, compliance checks, remediation | |
+| **Container Orchestration** | Manage containerized applications and services | Deployment management, resource monitoring, scaling | <img src="Images/Container.png" width="200px" /> |
+| **Performance Monitoring** | Monitor and optimize application performance | Real-time metrics, anomaly detection, historical trends | <img src="Images/performance.png" width="200px" /> |
+| **Load Testing** | Test system performance under various load conditions | Scenario templates, real-time analysis, resource utilization | <img src="Images/loadtest.png" width="200px" /> |
+| **Incident Response** | Detect and respond to system incidents automatically | Automated detection, response workflows, post-incident analysis | |
 
-### 🌟 Key Highlights
+### Key Highlights
 
-- ✅ **AI-Powered Automation** - Intelligent agents handle repetitive DevOps tasks
-- ✅ **Multi-Cloud Support** - Works seamlessly across AWS, Azure, GCP, and more
-- ✅ **Real-Time Monitoring** - Continuous monitoring with instant alerts
-- ✅ **Security First** - Built-in security scanning and compliance checks
-- ✅ **User-Friendly Interface** - Intuitive UI built with modern web technologies
-- ✅ **Extensible Architecture** - Easy to add new agents and capabilities
-- ✅ **Open Source** - MIT licensed and community-driven
+- [x] **AI-Powered Automation** - Intelligent agents handle repetitive DevOps tasks
+- [x] **Multi-Cloud Support** - Works seamlessly across AWS, Azure, GCP, and more
+- [x] **Real-Time Monitoring** - Continuous monitoring with instant alerts
+- [x] **Security First** - Built-in security scanning and compliance checks
+- [x] **User-Friendly Interface** - Intuitive UI built with modern web technologies
+- [x] **Extensible Architecture** - Easy to add new agents and capabilities
+- [x] **Open Source** - MIT licensed and community-driven
 
 ---
 
-## 🎯 Why DevOps AI Agents?
+## Why DevOps AI Agents?
 
 <div align="center">
 
 ```mermaid
 graph LR
-    A[Manual DevOps] -->|Time Consuming| B[Repetitive Tasks]
-    A -->|Human Error| C[Inconsistent Results]
-    A -->|Limited Insights| D[Reactive Approach]
-    E[AI-Powered DevOps] -->|Automated| F[Efficient Workflows]
-    E -->|AI-Driven| G[Consistent Quality]
-    E -->|Intelligent| H[Proactive Solutions]
-    
-    style E fill:#4CAF50,stroke:#388E3C,stroke-width:2px,color:#fff
-    style A fill:#F44336,stroke:#D32F2F,stroke-width:2px,color:#fff
+ A[Manual DevOps] -->|Time Consuming| B[Repetitive Tasks]
+ A -->|Human Error| C[Inconsistent Results]
+ A -->|Limited Insights| D[Reactive Approach]
+ E[AI-Powered DevOps] -->|Automated| F[Efficient Workflows]
+ E -->|AI-Driven| G[Consistent Quality]
+ E -->|Intelligent| H[Proactive Solutions]
+ 
+ style E fill:#4CAF50,stroke:#388E3C,stroke-width:2px,color:#fff
+ style A fill:#F44336,stroke:#D32F2F,stroke-width:2px,color:#fff
 ```
 
 </div>
 
-### 🚀 Transform Your DevOps Workflow
+### Transform Your DevOps Workflow
 
 | Traditional DevOps | DevOps AI Agents |
 |-------------------|------------------|
-| ⏰ Manual pipeline configuration | 🤖 AI-driven pipeline optimization |
-| 📝 Manual code reviews | 🔍 Automated quality analysis |
-| 🐛 Reactive incident response | ⚡ Proactive issue detection |
-| 💰 Unpredictable cloud costs | 📊 AI-powered cost optimization |
-| 🔒 Periodic security scans | 🛡️ Continuous security monitoring |
-| 📈 Limited performance insights | 🧠 Deep performance analytics |
+| Manual pipeline configuration | AI-driven pipeline optimization |
+| Manual code reviews | Automated quality analysis |
+| Reactive incident response | Proactive issue detection |
+| Unpredictable cloud costs | AI-powered cost optimization |
+| Periodic security scans | Continuous security monitoring |
+| Limited performance insights | Deep performance analytics |
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 <div align="center">
 
 ```mermaid
 graph TD
-    A[Frontend] --> B[Next.js]
-    A --> C[React.js]
-    A --> D[TypeScript]
-    A --> E[TailwindCSS]
-    A --> F[Framer Motion]
-    G[Icons/UI] --> H[React Icons]
-    I[Development] --> J[ESLint]
-    I --> K[TypeScript]
-    I --> L[PostCSS]
-    I --> M[Autoprefixer]
+ A[Frontend] --> B[Next.js]
+ A --> C[React.js]
+ A --> D[TypeScript]
+ A --> E[TailwindCSS]
+ A --> F[Framer Motion]
+ G[Icons/UI] --> H[React Icons]
+ I[Development] --> J[ESLint]
+ I --> K[TypeScript]
+ I --> L[PostCSS]
+ I --> M[Autoprefixer]
 ```
 
 </div>
@@ -192,45 +192,45 @@ graph TD
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
 
-- 📦 **Node.js** (v16.14 or later) - [Download](https://nodejs.org/)
-- 📦 **npm** (v7.0 or later) or **yarn** (v1.22 or later)
-- 🐍 **Python** (v3.8 or later) - For backend agents
-- 🐳 **Docker** (Optional) - For containerized deployment
-- 🔧 **Git** - For version control
+- **Node.js** (v16.14 or later) - [Download](https://nodejs.org/)
+- **npm** (v7.0 or later) or **yarn** (v1.22 or later)
+- **Python** (v3.8 or later) - For backend agents
+- **Docker** (Optional) - For containerized deployment
+- **Git** - For version control
 
 ### Installation & Setup
 
-#### 🚀 Quick Start
+#### Quick Start
 
 ```bash
-# 1️⃣ Clone the repository
+# 1 Clone the repository
 git clone https://github.com/Anubothu-Aravind/Devops-AI-Agent.git
 cd Devops-AI-Agents/devops-ai-agents
 
-# 2️⃣ Navigate to the frontend directory
+# 2 Navigate to the frontend directory
 cd devops-ai-agents
 
-# 3️⃣ Install dependencies
+# 3 Install dependencies
 npm install
 # or
 yarn install
 
-# 4️⃣ Start the development server
+# 4 Start the development server
 npm run dev
 # or
 yarn dev
 
-# 5️⃣ Open your browser and navigate to
-# 🌐 http://localhost:3000
+# 5 Open your browser and navigate to
+# http://localhost:3000
 ```
 
-#### 🐍 Python Backend Setup (Optional)
+#### Python Backend Setup (Optional)
 
 ```bash
 # Navigate to the root directory
@@ -289,12 +289,12 @@ NEXT_PUBLIC_GA_ID=your_google_analytics_id
 
 ```mermaid
 graph LR
-    A[Clone Repository] --> B[Install Dependencies]
-    B --> C[Start Dev Server]
-    C --> D[Make Changes]
-    D --> E[Test Changes]
-    E --> F[Commit & Push]
-    F --> G[Create PR]
+ A[Clone Repository] --> B[Install Dependencies]
+ B --> C[Start Dev Server]
+ C --> D[Make Changes]
+ D --> E[Test Changes]
+ E --> F[Commit & Push]
+ F --> G[Create PR]
 ```
 
 </div>
@@ -316,20 +316,20 @@ npm run start
 yarn start
 
 # Production server will be available at:
-# 🌐 http://localhost:3000
+# http://localhost:3000
 ```
 
-### 🔍 Verify Installation
+### Verify Installation
 
 ```bash
 # Check Node.js version
-node --version  # Should be v16.14 or higher
+node --version # Should be v16.14 or higher
 
 # Check npm version
-npm --version   # Should be v7.0 or higher
+npm --version # Should be v7.0 or higher
 
 # Check Python version
-python --version  # Should be v3.8 or higher
+python --version # Should be v3.8 or higher
 
 # Run linting
 npm run lint
@@ -337,7 +337,7 @@ npm run lint
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows a modern frontend architecture using Next.js App Router:
 
@@ -345,37 +345,37 @@ The application follows a modern frontend architecture using Next.js App Router:
 
 ```
 devops-ai-agents/
-├── app/                  # Next.js App Router
-│   ├── ci-cd/            # CI/CD Pipeline module
-│   ├── cloud-infrastructure/  # Cloud Infrastructure module
-│   ├── code-analysis/    # Code Analysis module
-│   ├── container-orchestration/  # Container Orchestration module
-│   ├── incident-response/  # Incident Response module
-│   ├── load-testing/     # Load Testing module
-│   ├── performance-monitoring/  # Performance Monitoring module
-│   ├── security-scanning/  # Security Scanning module
-│   ├── layout.tsx        # Root layout
-│   ├── page.tsx          # Home page
-│   └── globals.css       # Global styles
-├── components/           # Reusable React components
-│   ├── AgentChat.tsx     # AI assistant chat interface
-│   ├── FeatureCard.tsx   # Feature card component
-│   ├── PageLayout.tsx    # Common page layout
-│   └── Sidebar.tsx       # Navigation sidebar
-├── public/               # Static assets
-└── ...                   # Configuration files
+├── app/ # Next.js App Router
+│ ├── ci-cd/ # CI/CD Pipeline module
+│ ├── cloud-infrastructure/ # Cloud Infrastructure module
+│ ├── code-analysis/ # Code Analysis module
+│ ├── container-orchestration/ # Container Orchestration module
+│ ├── incident-response/ # Incident Response module
+│ ├── load-testing/ # Load Testing module
+│ ├── performance-monitoring/ # Performance Monitoring module
+│ ├── security-scanning/ # Security Scanning module
+│ ├── layout.tsx # Root layout
+│ ├── page.tsx # Home page
+│ └── globals.css # Global styles
+├── components/ # Reusable React components
+│ ├── AgentChat.tsx # AI assistant chat interface
+│ ├── FeatureCard.tsx # Feature card component
+│ ├── PageLayout.tsx # Common page layout
+│ └── Sidebar.tsx # Navigation sidebar
+├── public/ # Static assets
+└── ... # Configuration files
 ```
 
 </div>
 
 ---
 
-## 🧩 Components
+## Components
 
 ### Core Components
 
 <div align="center">
-  <img src="Images/image.png" alt="Core Components Overview" width="700px" />
+ <img src="Images/image.png" alt="Core Components Overview" width="700px" />
 </div>
 
 | Component | Description |
@@ -385,7 +385,7 @@ devops-ai-agents/
 | **AgentChat** | Interactive AI assistant interface |
 | **FeatureCard** | Interactive cards for feature navigation |
 
-### 🎨 Component Features
+### Component Features
 
 - **Responsive Design** - Mobile-first approach with adaptive layouts
 - **Dark Mode Support** - Elegant dark theme inspired by Microsoft design
@@ -395,81 +395,81 @@ devops-ai-agents/
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 Devops-AI-Agents/
 │
-├── 📂 devops-ai-agents/          # Frontend Next.js application
-│   ├── 📂 app/                   # Next.js App Router pages
-│   │   ├── 📄 layout.tsx         # Root layout
-│   │   ├── 📄 page.tsx           # Home page
-│   │   ├── 📄 globals.css        # Global styles
-│   │   ├── 📂 ci-cd/             # CI/CD Pipeline module
-│   │   ├── 📂 cloud-infrastructure/    # Cloud Infrastructure module
-│   │   ├── 📂 code-analysis/     # Code Analysis module
-│   │   ├── 📂 container-orchestration/ # Container Orchestration
-│   │   ├── 📂 incident-response/ # Incident Response module
-│   │   ├── 📂 load-testing/      # Load Testing module
-│   │   ├── 📂 performance-monitoring/  # Performance Monitoring
-│   │   └── 📂 security-scanning/ # Security Scanning module
-│   │
-│   ├── 📂 components/            # Reusable React components
-│   │   ├── 📄 AgentChat.tsx      # AI assistant interface
-│   │   ├── 📄 FeatureCard.tsx    # Feature card component
-│   │   ├── 📄 PageLayout.tsx     # Common page layout
-│   │   └── 📄 Sidebar.tsx        # Navigation sidebar
-│   │
-│   ├── 📄 package.json           # Frontend dependencies
-│   ├── 📄 next.config.js         # Next.js configuration
-│   ├── 📄 tailwind.config.js     # TailwindCSS configuration
-│   └── 📄 tsconfig.json          # TypeScript configuration
+├── devops-ai-agents/ # Frontend Next.js application
+│ ├── app/ # Next.js App Router pages
+│ │ ├── layout.tsx # Root layout
+│ │ ├── page.tsx # Home page
+│ │ ├── globals.css # Global styles
+│ │ ├── ci-cd/ # CI/CD Pipeline module
+│ │ ├── cloud-infrastructure/ # Cloud Infrastructure module
+│ │ ├── code-analysis/ # Code Analysis module
+│ │ ├── container-orchestration/ # Container Orchestration
+│ │ ├── incident-response/ # Incident Response module
+│ │ ├── load-testing/ # Load Testing module
+│ │ ├── performance-monitoring/ # Performance Monitoring
+│ │ └── security-scanning/ # Security Scanning module
+│ │
+│ ├── components/ # Reusable React components
+│ │ ├── AgentChat.tsx # AI assistant interface
+│ │ ├── FeatureCard.tsx # Feature card component
+│ │ ├── PageLayout.tsx # Common page layout
+│ │ └── Sidebar.tsx # Navigation sidebar
+│ │
+│ ├── package.json # Frontend dependencies
+│ ├── next.config.js # Next.js configuration
+│ ├── tailwind.config.js # TailwindCSS configuration
+│ └── tsconfig.json # TypeScript configuration
 │
-├── 📂 ci_cd/                     # CI/CD Agent (Python)
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── ci_cd/ # CI/CD Agent (Python)
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 cloud_infra/               # Cloud Infrastructure Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── cloud_infra/ # Cloud Infrastructure Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 code_anals/                # Code Analysis Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── code_anals/ # Code Analysis Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 cona/                      # Container Orchestration Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── cona/ # Container Orchestration Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 iinciden/                  # Incident Response Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── iinciden/ # Incident Response Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 load/                      # Load Testing Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── load/ # Load Testing Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 monier/                    # Monitoring Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── monier/ # Monitoring Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 performance/               # Performance Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── performance/ # Performance Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 securi/                    # Security Agent
-│   ├── 📄 __init__.py
-│   └── 📄 agent.py
+├── securi/ # Security Agent
+│ ├── __init__.py
+│ └── agent.py
 │
-├── 📂 Images/                    # Documentation images
-├── 📄 Dockerfile                 # Docker configuration
-├── 📄 README.md                  # This file
-└── 📄 LICENSE                    # MIT License
+├── Images/ # Documentation images
+├── Dockerfile # Docker configuration
+├── README.md # This file
+└── LICENSE # MIT License
 ```
 
 ---
 
-## 🔌 API Documentation
+## API Documentation
 
 ### Agent Communication Protocol
 
@@ -477,16 +477,16 @@ Each AI agent exposes a consistent API for interaction:
 
 ```typescript
 interface AgentRequest {
-  action: string;
-  parameters: Record<string, any>;
-  context?: string;
+ action: string;
+ parameters: Record<string, any>;
+ context?: string;
 }
 
 interface AgentResponse {
-  success: boolean;
-  data?: any;
-  message: string;
-  suggestions?: string[];
+ success: boolean;
+ data?: any;
+ message: string;
+ suggestions?: string[];
 }
 ```
 
@@ -509,7 +509,7 @@ interface AgentResponse {
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Running Tests
 
@@ -538,17 +538,17 @@ npm run lint -- --fix
 ```
 devops-ai-agents/
 ├── __tests__/
-│   ├── components/
-│   │   ├── AgentChat.test.tsx
-│   │   ├── FeatureCard.test.tsx
-│   │   └── Sidebar.test.tsx
-│   └── pages/
-│       └── home.test.tsx
+│ ├── components/
+│ │ ├── AgentChat.test.tsx
+│ │ ├── FeatureCard.test.tsx
+│ │ └── Sidebar.test.tsx
+│ └── pages/
+│ └── home.test.tsx
 ```
 
 ---
 
-## 🐳 Docker Support
+## Docker Support
 
 ### Using Docker
 
@@ -569,14 +569,14 @@ docker-compose down
 ### Docker Configuration
 
 The included `Dockerfile` provides:
-- ✅ Multi-stage build for optimized image size
-- ✅ Production-ready Node.js environment
-- ✅ Security best practices
-- ✅ Minimal attack surface
+- [x] Multi-stage build for optimized image size
+- [x] Production-ready Node.js environment
+- [x] Security best practices
+- [x] Minimal attack surface
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -611,31 +611,31 @@ Modify `tailwind.config.js` to customize the theme:
 
 ```javascript
 module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#0078D4',
-        secondary: '#2B88D8',
-        accent: '#00BCF2',
-        // Add your custom colors
-      },
-    },
-  },
+ theme: {
+ extend: {
+ colors: {
+ primary: '#0078D4',
+ secondary: '#2B88D8',
+ accent: '#00BCF2',
+ // Add your custom colors
+ },
+ },
+ },
 }
 ```
 
 ---
 
-## 📈 Roadmap
+## Roadmap
 
-### 🎯 Current Version (v0.1.0)
+### Current Version (v0.1.0)
 
-- ✅ Core platform architecture
-- ✅ 8 specialized AI agents
-- ✅ Modern UI with dark mode
-- ✅ Basic agent interactions
+- [x] Core platform architecture
+- [x] 8 specialized AI agents
+- [x] Modern UI with dark mode
+- [x] Basic agent interactions
 
-### 🚀 Upcoming Features (v0.2.0)
+### Upcoming Features (v0.2.0)
 
 - [ ] **Advanced AI Models** - Integration with GPT-4, Claude, and Llama
 - [ ] **Real-time Collaboration** - Multi-user support with WebSocket
@@ -644,7 +644,7 @@ module.exports = {
 - [ ] **Advanced Analytics** - Detailed insights and reporting
 - [ ] **Mobile App** - iOS and Android applications
 
-### 🌟 Future Vision (v1.0.0)
+### Future Vision (v1.0.0)
 
 - [ ] **Enterprise Features** - SSO, RBAC, audit logging
 - [ ] **Multi-Cloud Orchestration** - Unified control across clouds
@@ -655,7 +655,7 @@ module.exports = {
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 <details>
 <summary><b>Q: What cloud providers are supported?</b></summary>
@@ -695,10 +695,10 @@ Yes! The UI is built with TailwindCSS, making it easy to customize colors, spaci
 
 ---
 
-## 🧠 AI Integration
+## AI Integration
 
 <div align="center">
-  <img src="Images/image copy.png" alt="AI Integration" width="700px" />
+ <img src="Images/image copy.png" alt="AI Integration" width="700px" />
 </div>
 
 The platform integrates AI capabilities throughout:
@@ -712,33 +712,33 @@ The platform integrates AI capabilities throughout:
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <div align="center">
 
-### 🏠 Home Dashboard
+### Home Dashboard
 <img src="Images/home.png" alt="Home Dashboard" width="700px" />
 
-### 🔄 CI/CD Pipeline Management
+### CI/CD Pipeline Management
 <img src="Images/ci.png" alt="CI/CD Pipeline" width="700px" />
 
-### ☁️ Cloud Infrastructure
+### Cloud Infrastructure
 <img src="Images/infra.png" alt="Cloud Infrastructure" width="700px" />
 
-### 📊 Performance Monitoring
+### Performance Monitoring
 <img src="Images/performance.png" alt="Performance Monitoring" width="700px" />
 
-### 🐳 Container Orchestration
+### Container Orchestration
 <img src="Images/Container.png" alt="Container Orchestration" width="700px" />
 
-### ⚡ Load Testing
+### Load Testing
 <img src="Images/loadtest.png" alt="Load Testing" width="700px" />
 
 </div>
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 <details>
 <summary><b>What is DevOps AI Agents Platform?</b></summary>
@@ -778,7 +778,7 @@ Each module has its own dedicated page component where you can customize the AI 
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -827,22 +827,22 @@ If you're still experiencing problems:
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
-### ✅ Completed Features
+### Completed Features
 - [x] Modern, responsive UI with TailwindCSS
 - [x] 8 specialized DevOps AI agent modules
 - [x] Interactive chat interface for each module
 - [x] Real-time performance monitoring visualizations
 - [x] Comprehensive documentation
 
-### 🚧 In Progress
+### In Progress
 - [ ] Backend API integration
 - [ ] User authentication and authorization
 - [ ] Persistent data storage
 - [ ] Real AI model integration (OpenAI, Claude, etc.)
 
-### 🔮 Future Enhancements
+### Future Enhancements
 - [ ] Multi-user support with team collaboration
 - [ ] Integration with popular DevOps tools (Jenkins, GitHub Actions, GitLab CI)
 - [ ] Custom workflow builder
@@ -857,12 +857,12 @@ If you're still experiencing problems:
 - [ ] Integration with monitoring tools (Prometheus, Grafana, Datadog)
 - [ ] Multi-language support (i18n)
 
-### 💡 Proposed Features
+### Proposed Features
 Want to see a feature? [Open a feature request](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues/new) and let us know!
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -870,12 +870,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ```mermaid
 graph TD
-    A[Fork Repository] --> B[Create Feature Branch]
-    B --> C[Make Changes]
-    C --> D[Run Tests]
-    D --> E[Submit Pull Request]
-    E --> F[Code Review]
-    F --> G[Merge]
+ A[Fork Repository] --> B[Create Feature Branch]
+ B --> C[Make Changes]
+ C --> D[Run Tests]
+ D --> E[Submit Pull Request]
+ E --> F[Code Review]
+ F --> G[Merge]
 ```
 
 </div>
@@ -888,17 +888,17 @@ graph TD
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-### 📝 Code Standards
+### Code Standards
 
-- ✅ Follow the established coding style (ESLint + Prettier)
-- ✅ Write tests for new features (Jest + React Testing Library)
-- ✅ Keep documentation up-to-date
-- ✅ Ensure your code passes all linting checks
-- ✅ Write meaningful commit messages
-- ✅ Add comments for complex logic
-- ✅ Follow TypeScript best practices
+- [x] Follow the established coding style (ESLint + Prettier)
+- [x] Write tests for new features (Jest + React Testing Library)
+- [x] Keep documentation up-to-date
+- [x] Ensure your code passes all linting checks
+- [x] Write meaningful commit messages
+- [x] Add comments for complex logic
+- [x] Follow TypeScript best practices
 
-### 🐛 Found a Bug?
+### Found a Bug?
 
 If you find a bug, please open an issue with:
 - Clear description of the problem
@@ -907,7 +907,7 @@ If you find a bug, please open an issue with:
 - Screenshots (if applicable)
 - Environment details (OS, Node version, etc.)
 
-### 💡 Feature Requests
+### Feature Requests
 
 We welcome feature requests! Please open an issue with:
 - Clear description of the feature
@@ -916,15 +916,15 @@ We welcome feature requests! Please open an issue with:
 
 ---
 
-## 💬 Support
+## Support
 
 ### Getting Help
 
-- 📖 **Documentation**: Check this README and inline code comments
-- 💬 **Discussions**: Join our [GitHub Discussions](https://github.com/Anubothu-Aravind/Devops-AI-Agent/discussions)
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues/new)
-- 💡 **Feature Requests**: [Request a feature](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues/new)
-- 📧 **Email**: For private inquiries, reach out to [Aravind](https://github.com/Anubothu-Aravind)
+- **Documentation**: Check this README and inline code comments
+- **Discussions**: Join our [GitHub Discussions](https://github.com/Anubothu-Aravind/Devops-AI-Agent/discussions)
+- **Bug Reports**: [Open an issue](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues/new)
+- **Feature Requests**: [Request a feature](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues/new)
+- **Email**: For private inquiries, reach out to [Aravind](https://github.com/Anubothu-Aravind)
 
 ### Connect With Us
 
@@ -937,15 +937,15 @@ We welcome feature requests! Please open an issue with:
 ### Show Your Support
 
 If you find this project helpful, please consider:
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting new features
-- 🤝 Contributing code
-- 📢 Sharing with others
+- Starring the repository
+- Reporting bugs
+- Suggesting new features
+- Contributing code
+- Sharing with others
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
@@ -967,18 +967,18 @@ copies or substantial portions of the Software.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Special thanks to:
 
-- 🎨 **Microsoft Design System** - For UI/UX inspiration
-- 🤖 **OpenAI** - For AI model capabilities
-- ⚛️ **Vercel** - For Next.js framework and hosting
-- 🎭 **Framer** - For animation library
-- 🎨 **TailwindCSS Team** - For the amazing CSS framework
-- 👥 **Open Source Community** - For continuous support and contributions
+- **Microsoft Design System** - For UI/UX inspiration
+- **OpenAI** - For AI model capabilities
+- **Vercel** - For Next.js framework and hosting
+- **Framer** - For animation library
+- **TailwindCSS Team** - For the amazing CSS framework
+- **Open Source Community** - For continuous support and contributions
 
-### 🌟 Built With
+### Built With
 
 - [Next.js](https://nextjs.org/) - React framework for production
 - [React](https://react.dev/) - UI component library
@@ -990,7 +990,7 @@ Special thanks to:
 
 ---
 
-## 📞 Contact
+## Contact
 
 <div align="center">
 
@@ -1001,53 +1001,53 @@ Special thanks to:
 
 </div>
 
-### 💬 Community & Support
+### Community & Support
 
-- 💡 **Report Issues**: [GitHub Issues](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues)
-- 🗨️ **Discussions**: [GitHub Discussions](https://github.com/Anubothu-Aravind/Devops-AI-Agent/discussions)
-- 📖 **Documentation**: [Wiki](https://github.com/Anubothu-Aravind/Devops-AI-Agent/wiki)
-- 🌐 **Website**: Coming Soon!
+- **Report Issues**: [GitHub Issues](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Anubothu-Aravind/Devops-AI-Agent/discussions)
+- **Documentation**: [Wiki](https://github.com/Anubothu-Aravind/Devops-AI-Agent/wiki)
+- **Website**: Coming Soon!
 
 ---
 
 <div align="center">
 
-### ⭐ Star History
+### Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Anubothu-Aravind/Devops-AI-Agent&type=Date)](https://star-history.com/#Anubothu-Aravind/Devops-AI-Agent&Date)
 
 ---
 
-### 🎯 Quick Links
+### Quick Links
 
-[🏠 Home](https://github.com/Anubothu-Aravind/Devops-AI-Agent) • 
-[📖 Docs](https://github.com/Anubothu-Aravind/Devops-AI-Agent/wiki) • 
-[🐛 Report Bug](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues) • 
-[✨ Request Feature](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues)
+[ Home](https://github.com/Anubothu-Aravind/Devops-AI-Agent) • 
+[ Docs](https://github.com/Anubothu-Aravind/Devops-AI-Agent/wiki) • 
+[ Report Bug](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues) • 
+[ Request Feature](https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues)
 
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" />
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT License" />
-  <img src="https://img.shields.io/github/stars/Anubothu-Aravind/Devops-AI-Agent?style=flat-square" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/Anubothu-Aravind/Devops-AI-Agent?style=flat-square" alt="Forks" />
+ <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" />
+ <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT License" />
+ <img src="https://img.shields.io/github/stars/Anubothu-Aravind/Devops-AI-Agent?style=flat-square" alt="Stars" />
+ <img src="https://img.shields.io/github/forks/Anubothu-Aravind/Devops-AI-Agent?style=flat-square" alt="Forks" />
 </p>
 
-<h3 align="center">⭐ If you find this project useful, please consider giving it a star! ⭐</h3>
+<h3 align="center"> If you find this project useful, please consider giving it a star! </h3>
 
 <p align="center">
-  <b>Built with ❤️ by <a href="https://github.com/Anubothu-Aravind">Aravind</a></b>
-  <br>
-  <i>Making DevOps smarter, one AI agent at a time</i>
+ <b>Built with love by <a href="https://github.com/Anubothu-Aravind">Aravind</a></b>
+ <br>
+ <i>Making DevOps smarter, one AI agent at a time</i>
 </p>
 
 <p align="center">
-  <sub>© 2026 DevOps AI Agents Platform. All rights reserved.</sub>
+ <sub>© 2026 DevOps AI Agents Platform. All rights reserved.</sub>
 </p>
 
 <p>
-  <sub>Made with passion for the DevOps community</sub>
+ <sub>Made with passion for the DevOps community</sub>
 </p>
 
 </div>

@@ -7,40 +7,40 @@ This document describes the architecture of the DevOps AI Agents platform deploy
 ## Architecture Diagram
 
 ```
-                                    Internet
-                                       |
-                                       v
-                            [Global Load Balancer]
-                                       |
-                    +------------------+------------------+
-                    |                                     |
-                    v                                     v
-            [Health Check]                        [Cloud Armor]
-                    |                                     |
-                    v                                     v
-            [Backend Service] ----------------------> [Firewall Rules]
-                    |
-                    v
-        +-----------+-----------+
-        |                       |
-        v                       v
-    [Instance Group]      [Instance Group]
-    (us-central1-a)       (us-central1-b)
-        |                       |
-        +----------+------------+
-                   |
-                   v
-            [VPC Network]
-                   |
-        +----------+----------+
-        |          |          |
-        v          v          v
-    [Subnet]   [Cloud NAT]  [Router]
-        |
-        +----------+----------+
-        |          |          |
-        v          v          v
-    [Storage]  [Cloud SQL]  [Monitoring]
+ Internet
+ |
+ v
+ [Global Load Balancer]
+ |
+ +------------------+------------------+
+ | |
+ v v
+ [Health Check] [Cloud Armor]
+ | |
+ v v
+ [Backend Service] ----------------------> [Firewall Rules]
+ |
+ v
+ +-----------+-----------+
+ | |
+ v v
+ [Instance Group] [Instance Group]
+ (us-central1-a) (us-central1-b)
+ | |
+ +----------+------------+
+ |
+ v
+ [VPC Network]
+ |
+ +----------+----------+
+ | | |
+ v v v
+ [Subnet] [Cloud NAT] [Router]
+ |
+ +----------+----------+
+ | | |
+ v v v
+ [Storage] [Cloud SQL] [Monitoring]
 ```
 
 ## Components
@@ -51,15 +51,15 @@ This document describes the architecture of the DevOps AI Agents platform deploy
 - **Purpose**: Isolated network environment
 - **CIDR**: 10.0.0.0/24 (customizable)
 - **Features**:
-  - Custom subnet configuration
-  - Private Google Access enabled
-  - VPC Flow Logs for monitoring
+ - Custom subnet configuration
+ - Private Google Access enabled
+ - VPC Flow Logs for monitoring
 
 #### Subnet
 - **Primary Range**: 10.0.0.0/24
 - **Secondary Ranges**:
-  - Services: 10.1.0.0/16
-  - Pods: 10.2.0.0/16 (for future Kubernetes)
+ - Services: 10.1.0.0/16
+ - Pods: 10.2.0.0/16 (for future Kubernetes)
 
 #### Cloud NAT
 - **Purpose**: Outbound internet access for private instances
@@ -100,10 +100,10 @@ This document describes the architecture of the DevOps AI Agents platform deploy
 - **Type**: External, managed
 - **Protocol**: HTTP (HTTPS ready)
 - **Features**:
-  - Global anycast IP
-  - SSL termination ready
-  - Cloud CDN ready
-  - Cloud Armor integration ready
+ - Global anycast IP
+ - SSL termination ready
+ - Cloud CDN ready
+ - Cloud Armor integration ready
 
 #### Backend Service
 - **Protocol**: HTTP
@@ -127,28 +127,28 @@ This document describes the architecture of the DevOps AI Agents platform deploy
 - **Purpose**: Application data, backups
 - **Location**: Regional
 - **Features**:
-  - Versioning enabled
-  - Lifecycle management (90 days)
-  - Uniform bucket-level access
+ - Versioning enabled
+ - Lifecycle management (90 days)
+ - Uniform bucket-level access
 
 #### Cloud SQL (Optional)
 - **Engine**: PostgreSQL 15
 - **Type**: Regional
 - **Tier**: db-f1-micro (customizable)
 - **Features**:
-  - Automated backups
-  - Point-in-time recovery
-  - Private IP only
-  - High availability option
+ - Automated backups
+ - Point-in-time recovery
+ - Private IP only
+ - High availability option
 
 ### 5. Security Layer
 
 #### Service Account
 - **Purpose**: Instance identity
 - **Permissions**:
-  - Logging writer
-  - Monitoring metric writer
-  - Cloud Trace agent
+ - Logging writer
+ - Monitoring metric writer
+ - Cloud Trace agent
 
 #### IAM Roles
 - Principle of least privilege
@@ -165,25 +165,25 @@ This document describes the architecture of the DevOps AI Agents platform deploy
 
 #### Cloud Monitoring
 - **Metrics**:
-  - CPU utilization
-  - Memory usage
-  - Disk I/O
-  - Network traffic
-  - Application metrics
+ - CPU utilization
+ - Memory usage
+ - Disk I/O
+ - Network traffic
+ - Application metrics
 
 #### Cloud Logging
 - **Logs**:
-  - System logs
-  - Application logs
-  - Access logs
-  - Audit logs
+ - System logs
+ - Application logs
+ - Access logs
+ - Audit logs
 
 #### Alerting
 - **Policies**:
-  - High CPU (>80%)
-  - Instance health
-  - Load balancer errors
-  - Custom application metrics
+ - High CPU (>80%)
+ - Instance health
+ - Load balancer errors
+ - Custom application metrics
 
 ## Data Flow
 
@@ -237,22 +237,22 @@ This document describes the architecture of the DevOps AI Agents platform deploy
 ## Security Best Practices
 
 ### Network Security
-- ✅ Private instances only
-- ✅ Restricted SSH access
-- ✅ Firewall rules with source restrictions
-- ✅ VPC isolation
+- [x] Private instances only
+- [x] Restricted SSH access
+- [x] Firewall rules with source restrictions
+- [x] VPC isolation
 
 ### Access Control
-- ✅ Service accounts with minimal permissions
-- ✅ No default service account
-- ✅ IAM roles properly scoped
-- ✅ Audit logging enabled
+- [x] Service accounts with minimal permissions
+- [x] No default service account
+- [x] IAM roles properly scoped
+- [x] Audit logging enabled
 
 ### Data Protection
-- ✅ Encryption at rest (default)
-- ✅ Encryption in transit (HTTPS ready)
-- ✅ Backup and versioning
-- ✅ Lifecycle management
+- [x] Encryption at rest (default)
+- [x] Encryption in transit (HTTPS ready)
+- [x] Backup and versioning
+- [x] Lifecycle management
 
 ## Cost Optimization
 

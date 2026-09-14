@@ -1,21 +1,21 @@
-# 🚀 Deploy DevOps AI Agents on GCP with Terraform
+# Deploy DevOps AI Agents on GCP with Terraform
 
 Complete infrastructure-as-code solution for deploying the DevOps AI Agents platform on Google Cloud Platform.
 
-## 📦 What's Included
+## What's Included
 
 A production-ready Terraform configuration that deploys:
 
-- ✅ **VPC Network** with custom subnet and firewall rules
-- ✅ **Compute Engine** instances with auto-healing
-- ✅ **Global Load Balancer** with health checks
-- ✅ **Cloud NAT** for outbound internet access
-- ✅ **Cloud Storage** for application data
-- ✅ **Cloud SQL** PostgreSQL (optional)
-- ✅ **Monitoring & Alerting** with Cloud Monitoring
-- ✅ **IAM** service accounts with minimal permissions
+- [x] **VPC Network** with custom subnet and firewall rules
+- [x] **Compute Engine** instances with auto-healing
+- [x] **Global Load Balancer** with health checks
+- [x] **Cloud NAT** for outbound internet access
+- [x] **Cloud Storage** for application data
+- [x] **Cloud SQL** PostgreSQL (optional)
+- [x] **Monitoring & Alerting** with Cloud Monitoring
+- [x] **IAM** service accounts with minimal permissions
 
-## 🎯 Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 
@@ -42,9 +42,9 @@ gcloud config set project YOUR_PROJECT_ID
 
 # Enable required APIs
 gcloud services enable compute.googleapis.com \
-  servicenetworking.googleapis.com \
-  storage-api.googleapis.com \
-  monitoring.googleapis.com
+ servicenetworking.googleapis.com \
+ storage-api.googleapis.com \
+ monitoring.googleapis.com
 ```
 
 ### 3. Configure Terraform
@@ -62,8 +62,8 @@ notepad terraform.tfvars
 
 **Required configuration in terraform.tfvars:**
 ```hcl
-project_id      = "your-gcp-project-id"
-region          = "us-central1"
+project_id = "your-gcp-project-id"
+region = "us-central1"
 allowed_ssh_ips = ["YOUR_IP/32"]
 ```
 
@@ -89,79 +89,79 @@ terraform output load_balancer_ip
 start http://$(terraform output -raw load_balancer_ip)
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 terraform/
-├── main.tf                      # Main infrastructure configuration
-├── variables.tf                 # Input variables
-├── outputs.tf                   # Output values
-├── backend.tf                   # Remote state configuration
-├── terraform.tfvars.example     # Example variables
-├── deploy.sh                    # Deployment script
-├── destroy.sh                   # Cleanup script
-├── .gitignore                   # Git ignore rules
+├── main.tf # Main infrastructure configuration
+├── variables.tf # Input variables
+├── outputs.tf # Output values
+├── backend.tf # Remote state configuration
+├── terraform.tfvars.example # Example variables
+├── deploy.sh # Deployment script
+├── destroy.sh # Cleanup script
+├── .gitignore # Git ignore rules
 ├── scripts/
-│   └── startup.sh              # Instance startup script
+│ └── startup.sh # Instance startup script
 └── Documentation/
-    ├── README.md               # Complete setup guide
-    ├── DEPLOYMENT_GUIDE.md     # Detailed deployment guide
-    ├── ARCHITECTURE.md         # Architecture documentation
-    ├── QUICK_REFERENCE.md      # Quick command reference
-    ├── COMMANDS.md             # Complete command reference
-    └── DEPLOYMENT_CHECKLIST.md # Deployment checklist
+ ├── README.md # Complete setup guide
+ ├── DEPLOYMENT_GUIDE.md # Detailed deployment guide
+ ├── ARCHITECTURE.md # Architecture documentation
+ ├── QUICK_REFERENCE.md # Quick command reference
+ ├── COMMANDS.md # Complete command reference
+ └── DEPLOYMENT_CHECKLIST.md # Deployment checklist
 ```
 
-## 📚 Documentation
+## Documentation
 
 ### Essential Guides
 
 1. **[terraform/README.md](terraform/README.md)**
-   - Complete setup and configuration guide
-   - Prerequisites and installation
-   - Configuration options
-   - Troubleshooting
+ - Complete setup and configuration guide
+ - Prerequisites and installation
+ - Configuration options
+ - Troubleshooting
 
 2. **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)**
-   - Detailed step-by-step deployment instructions
-   - Post-deployment verification
-   - Monitoring and logging
-   - Cost management
-   - Security best practices
+ - Detailed step-by-step deployment instructions
+ - Post-deployment verification
+ - Monitoring and logging
+ - Cost management
+ - Security best practices
 
 3. **[terraform/ARCHITECTURE.md](terraform/ARCHITECTURE.md)**
-   - Infrastructure architecture overview
-   - Component descriptions
-   - Data flow diagrams
-   - High availability design
-   - Security architecture
+ - Infrastructure architecture overview
+ - Component descriptions
+ - Data flow diagrams
+ - High availability design
+ - Security architecture
 
 4. **[terraform/QUICK_REFERENCE.md](terraform/QUICK_REFERENCE.md)**
-   - Quick command reference
-   - Common operations
-   - Useful shortcuts
+ - Quick command reference
+ - Common operations
+ - Useful shortcuts
 
 5. **[terraform/COMMANDS.md](terraform/COMMANDS.md)**
-   - Complete Terraform command reference
-   - GCP CLI commands
-   - Debugging commands
-   - Automation scripts
+ - Complete Terraform command reference
+ - GCP CLI commands
+ - Debugging commands
+ - Automation scripts
 
 6. **[terraform/DEPLOYMENT_CHECKLIST.md](terraform/DEPLOYMENT_CHECKLIST.md)**
-   - Pre-deployment checklist
-   - Deployment steps
-   - Post-deployment verification
-   - Troubleshooting checklist
+ - Pre-deployment checklist
+ - Deployment steps
+ - Post-deployment verification
+ - Troubleshooting checklist
 
-## 🏗️ Infrastructure Overview
+## Infrastructure Overview
 
 ### Network Architecture
 ```
 Internet → Load Balancer → Backend Service → Instance Group → Instances
-                                                    ↓
-                                              VPC Network
-                                                    ↓
-                                    Cloud NAT → Cloud Router
+ ↓
+ VPC Network
+ ↓
+ Cloud NAT → Cloud Router
 ```
 
 ### Components
@@ -177,18 +177,18 @@ Internet → Load Balancer → Backend Service → Instance Group → Instances
 | **Cloud SQL** | PostgreSQL DB | Optional, automated backups |
 | **Monitoring** | Observability | Metrics, logs, alerts |
 
-## ⚙️ Configuration Options
+## Configuration Options
 
 ### Basic Configuration
 
 ```hcl
 # terraform.tfvars
-project_id      = "your-project-id"
-project_name    = "devops-ai-agents"
-region          = "us-central1"
-zone            = "us-central1-a"
-machine_type    = "e2-medium"
-instance_count  = 2
+project_id = "your-project-id"
+project_name = "devops-ai-agents"
+region = "us-central1"
+zone = "us-central1-a"
+machine_type = "e2-medium"
+instance_count = 2
 ```
 
 ### Advanced Configuration
@@ -196,17 +196,17 @@ instance_count  = 2
 ```hcl
 # Enable database
 enable_database = true
-db_tier         = "db-f1-micro"
+db_tier = "db-f1-micro"
 
 # Security
 allowed_ssh_ips = ["YOUR_IP/32"]
 
 # Scaling
 instance_count = 5
-machine_type   = "e2-standard-2"
+machine_type = "e2-standard-2"
 ```
 
-## 💰 Cost Estimation
+## Cost Estimation
 
 ### Monthly Costs (us-central1)
 
@@ -221,13 +221,13 @@ machine_type   = "e2-standard-2"
 
 Use the [GCP Pricing Calculator](https://cloud.google.com/products/calculator) for accurate estimates.
 
-## 🔧 Common Operations
+## Common Operations
 
 ### View Infrastructure
 ```bash
-terraform output                 # Show all outputs
-terraform show                   # Show current state
-gcloud compute instances list    # List instances
+terraform output # Show all outputs
+terraform show # Show current state
+gcloud compute instances list # List instances
 ```
 
 ### Scale Instances
@@ -258,16 +258,16 @@ bash destroy.sh
 terraform destroy
 ```
 
-## 🛡️ Security Features
+## Security Features
 
 ### Implemented
-- ✅ Private instances (no external IPs)
-- ✅ Restricted SSH access
-- ✅ Service accounts with minimal permissions
-- ✅ VPC isolation
-- ✅ Firewall rules
-- ✅ Encryption at rest
-- ✅ Audit logging
+- [x] Private instances (no external IPs)
+- [x] Restricted SSH access
+- [x] Service accounts with minimal permissions
+- [x] VPC isolation
+- [x] Firewall rules
+- [x] Encryption at rest
+- [x] Audit logging
 
 ### Recommended for Production
 - [ ] Enable HTTPS with SSL certificates
@@ -277,7 +277,7 @@ terraform destroy
 - [ ] Implement Cloud KMS
 - [ ] Set up Security Command Center
 
-## 📊 Monitoring
+## Monitoring
 
 ### Available Metrics
 - Instance CPU utilization
@@ -296,7 +296,7 @@ start https://console.cloud.google.com/monitoring
 gcloud logging read --limit=50
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -308,8 +308,8 @@ gcloud services enable compute.googleapis.com
 **Insufficient Permissions**
 ```bash
 gcloud projects add-iam-policy-binding PROJECT_ID \
-  --member="user:YOUR_EMAIL" \
-  --role="roles/editor"
+ --member="user:YOUR_EMAIL" \
+ --role="roles/editor"
 ```
 
 **Instances Not Healthy**
@@ -334,7 +334,7 @@ set TF_LOG=DEBUG
 terraform apply
 ```
 
-## 🚀 Next Steps
+## Next Steps
 
 ### After Deployment
 1. Configure HTTPS with SSL certificates
@@ -352,7 +352,7 @@ terraform apply
 6. Performance testing
 7. Cost optimization
 
-## 📞 Support
+## Support
 
 ### Resources
 - **Documentation**: See terraform/README.md
@@ -370,7 +370,7 @@ terraform apply
 - GitHub Issues: https://github.com/Anubothu-Aravind/Devops-AI-Agent/issues
 - GCP Support: https://cloud.google.com/support
 
-## ✅ Deployment Checklist
+## Deployment Checklist
 
 - [ ] Prerequisites installed (Terraform, gcloud)
 - [ ] GCP project created and billing enabled
@@ -383,13 +383,13 @@ terraform apply
 - [ ] Monitoring configured
 - [ ] Budget alerts set up
 
-## 📝 License
+## License
 
 MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-## 🎉 Ready to Deploy?
+## Ready to Deploy?
 
 ```bash
 cd terraform

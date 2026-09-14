@@ -1,4 +1,4 @@
-# 🏗️ Build Stage
+# Build Stage
 FROM node:18-alpine AS builder
 
 # Set working directory
@@ -20,7 +20,7 @@ ENV NODE_ENV production
 # Build the application
 RUN npm run build
 
-# 🚀 Production Stage
+# Production Stage
 FROM node:18-alpine AS runner
 
 # Set working directory

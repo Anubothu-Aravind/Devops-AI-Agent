@@ -1,69 +1,69 @@
 # GCP Deployment Summary - DevOps AI Agents
 
-## 🎉 Deployment Package Created Successfully!
+## Deployment Package Created Successfully!
 
 A complete Terraform infrastructure-as-code solution for deploying the DevOps AI Agents platform on Google Cloud Platform has been created.
 
-## 📦 What's Included
+## What's Included
 
 ### Terraform Configuration Files
 
 ```
 terraform/
-├── main.tf                      # Main infrastructure configuration
-├── variables.tf                 # Input variables
-├── outputs.tf                   # Output values
-├── backend.tf                   # Remote state configuration
-├── terraform.tfvars.example     # Example variables file
-├── .gitignore                   # Git ignore rules
+├── main.tf # Main infrastructure configuration
+├── variables.tf # Input variables
+├── outputs.tf # Output values
+├── backend.tf # Remote state configuration
+├── terraform.tfvars.example # Example variables file
+├── .gitignore # Git ignore rules
 ├── scripts/
-│   └── startup.sh              # Instance startup script
+│ └── startup.sh # Instance startup script
 └── Documentation/
-    ├── README.md               # Complete setup guide
-    ├── DEPLOYMENT_GUIDE.md     # Detailed deployment instructions
-    ├── ARCHITECTURE.md         # Architecture documentation
-    ├── QUICK_REFERENCE.md      # Quick command reference
-    └── COMMANDS.md             # Complete command reference
+ ├── README.md # Complete setup guide
+ ├── DEPLOYMENT_GUIDE.md # Detailed deployment instructions
+ ├── ARCHITECTURE.md # Architecture documentation
+ ├── QUICK_REFERENCE.md # Quick command reference
+ └── COMMANDS.md # Complete command reference
 ```
 
 ### Infrastructure Components
 
-✅ **Network Infrastructure**
+**Network Infrastructure**
 - Custom VPC network with subnet
 - Cloud NAT for outbound internet access
 - Firewall rules (HTTP, HTTPS, SSH, internal)
 - Cloud Router for NAT
 
-✅ **Compute Resources**
+**Compute Resources**
 - Instance template with Ubuntu 22.04 LTS
 - Regional Managed Instance Group (MIG)
 - Auto-healing with health checks
 - Service account with minimal permissions
 
-✅ **Load Balancing**
+**Load Balancing**
 - Global HTTP(S) Load Balancer
 - Backend service with health checks
 - Static external IP address
 - URL map and forwarding rules
 
-✅ **Storage**
+**Storage**
 - Cloud Storage bucket for application data
 - Versioning enabled
 - Lifecycle management (90-day retention)
 
-✅ **Database (Optional)**
+**Database (Optional)**
 - Cloud SQL PostgreSQL 15
 - Automated backups
 - Point-in-time recovery
 - Private IP configuration
 
-✅ **Monitoring & Alerting**
+**Monitoring & Alerting**
 - Cloud Monitoring integration
 - High CPU alert policy
 - Health check monitoring
 - Cloud Logging enabled
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### Prerequisites
 1. GCP account with billing enabled
@@ -86,9 +86,9 @@ gcloud config set project YOUR_PROJECT_ID
 
 # 4. Enable required APIs
 gcloud services enable compute.googleapis.com \
-  servicenetworking.googleapis.com \
-  storage-api.googleapis.com \
-  monitoring.googleapis.com
+ servicenetworking.googleapis.com \
+ storage-api.googleapis.com \
+ monitoring.googleapis.com
 
 # 5. Deploy infrastructure
 bash deploy.sh
@@ -111,7 +111,7 @@ terraform output load_balancer_ip
 # Open http://<LOAD_BALANCER_IP> in your browser
 ```
 
-## 📋 Configuration Options
+## Configuration Options
 
 ### Essential Variables
 
@@ -119,21 +119,21 @@ Edit `terraform.tfvars`:
 
 ```hcl
 # Required
-project_id   = "your-gcp-project-id"
+project_id = "your-gcp-project-id"
 project_name = "devops-ai-agents"
-region       = "us-central1"
-zone         = "us-central1-a"
+region = "us-central1"
+zone = "us-central1-a"
 
 # Security
-allowed_ssh_ips = ["YOUR_IP/32"]  # Restrict SSH access
+allowed_ssh_ips = ["YOUR_IP/32"] # Restrict SSH access
 
 # Compute
-machine_type   = "e2-medium"      # 2 vCPU, 4GB RAM
-instance_count = 2                # Number of instances
+machine_type = "e2-medium" # 2 vCPU, 4GB RAM
+instance_count = 2 # Number of instances
 
 # Optional: Database
 enable_database = false
-db_tier         = "db-f1-micro"
+db_tier = "db-f1-micro"
 ```
 
 ### Scaling Options
@@ -149,7 +149,7 @@ terraform apply -var="machine_type=e2-standard-2"
 terraform apply -var="enable_database=true"
 ```
 
-## 💰 Cost Estimation
+## Cost Estimation
 
 ### Monthly Costs (us-central1)
 
@@ -172,7 +172,7 @@ terraform apply -var="enable_database=true"
 4. Monitor and optimize egress traffic
 5. Set up budget alerts
 
-## 🏗️ Architecture Highlights
+## Architecture Highlights
 
 ### High Availability
 - Multi-zone deployment
@@ -199,7 +199,7 @@ terraform apply -var="enable_database=true"
 - Alert policies configured
 - Health check monitoring
 
-## 📚 Documentation
+## Documentation
 
 ### Available Guides
 
@@ -220,19 +220,19 @@ terraform apply -var="enable_database=true"
 - Security best practices
 - Disaster recovery
 
-## 🔧 Management Commands
+## Management Commands
 
 ### View Infrastructure
 ```bash
-terraform output                 # Show all outputs
-terraform show                   # Show current state
-gcloud compute instances list    # List instances
+terraform output # Show all outputs
+terraform show # Show current state
+gcloud compute instances list # List instances
 ```
 
 ### Update Infrastructure
 ```bash
-terraform plan                   # Preview changes
-terraform apply                  # Apply changes
+terraform plan # Preview changes
+terraform apply # Apply changes
 ```
 
 ### Monitor
@@ -249,19 +249,19 @@ gcloud compute ssh INSTANCE_NAME --zone=us-central1-a
 
 ### Destroy
 ```bash
-bash destroy.sh                  # Using script
-terraform destroy                # Manual destroy
+bash destroy.sh # Using script
+terraform destroy # Manual destroy
 ```
 
-## 🛡️ Security Best Practices
+## Security Best Practices
 
 ### Implemented
-✅ Private instances only (no external IPs)
-✅ Restricted SSH access via firewall
-✅ Service accounts with minimal permissions
-✅ VPC isolation
-✅ Encryption at rest (default)
-✅ Audit logging enabled
+Private instances only (no external IPs)
+Restricted SSH access via firewall
+Service accounts with minimal permissions
+VPC isolation
+Encryption at rest (default)
+Audit logging enabled
 
 ### Recommended for Production
 - [ ] Enable HTTPS with SSL certificates
@@ -272,19 +272,19 @@ terraform destroy                # Manual destroy
 - [ ] Set up Security Command Center
 - [ ] Regular security audits
 
-## 🔄 CI/CD Integration
+## CI/CD Integration
 
 ### Cloud Build Example
 
 ```yaml
 # cloudbuild.yaml
 steps:
-  - name: 'hashicorp/terraform'
-    args: ['init']
-  - name: 'hashicorp/terraform'
-    args: ['plan']
-  - name: 'hashicorp/terraform'
-    args: ['apply', '-auto-approve']
+ - name: 'hashicorp/terraform'
+ args: ['init']
+ - name: 'hashicorp/terraform'
+ args: ['plan']
+ - name: 'hashicorp/terraform'
+ args: ['apply', '-auto-approve']
 ```
 
 ### GitHub Actions Example
@@ -293,20 +293,20 @@ steps:
 # .github/workflows/deploy.yml
 name: Deploy to GCP
 on:
-  push:
-    branches: [main]
+ push:
+ branches: [main]
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: hashicorp/setup-terraform@v1
-      - run: terraform init
-      - run: terraform plan
-      - run: terraform apply -auto-approve
+ deploy:
+ runs-on: ubuntu-latest
+ steps:
+ - uses: actions/checkout@v2
+ - uses: hashicorp/setup-terraform@v1
+ - run: terraform init
+ - run: terraform plan
+ - run: terraform apply -auto-approve
 ```
 
-## 📊 Monitoring Dashboard
+## Monitoring Dashboard
 
 ### Key Metrics
 - Instance CPU utilization
@@ -325,7 +325,7 @@ start https://console.cloud.google.com/monitoring
 gcloud monitoring dashboards list
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -339,8 +339,8 @@ gcloud services enable compute.googleapis.com
 ```bash
 # Solution
 gcloud projects add-iam-policy-binding PROJECT_ID \
-  --member="user:YOUR_EMAIL" \
-  --role="roles/editor"
+ --member="user:YOUR_EMAIL" \
+ --role="roles/editor"
 ```
 
 **Issue**: Instances not healthy
@@ -362,13 +362,13 @@ set TF_LOG=DEBUG
 terraform apply
 ```
 
-## 🎯 Next Steps
+## Next Steps
 
 ### Immediate
-1. ✅ Deploy infrastructure
-2. ✅ Verify application is accessible
-3. ✅ Configure monitoring alerts
-4. ✅ Set up budget alerts
+1. Deploy infrastructure
+2. Verify application is accessible
+3. Configure monitoring alerts
+4. Set up budget alerts
 
 ### Short-term
 - [ ] Configure HTTPS with SSL certificates
@@ -384,7 +384,7 @@ terraform apply
 - [ ] Advanced monitoring dashboards
 - [ ] Disaster recovery testing
 
-## 📞 Support & Resources
+## Support & Resources
 
 ### Documentation
 - [Terraform GCP Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
@@ -401,7 +401,7 @@ terraform apply
 - [Terraform Documentation](https://www.terraform.io/docs)
 - [Project Repository](https://github.com/Anubothu-Aravind/Devops-AI-Agent)
 
-## ✅ Checklist
+## Checklist
 
 ### Pre-Deployment
 - [ ] GCP account created and billing enabled
@@ -425,7 +425,7 @@ terraform apply
 - [ ] Documentation reviewed
 - [ ] Backup strategy implemented
 
-## 🎉 Success!
+## Success!
 
 Your DevOps AI Agents platform is now ready to be deployed on GCP!
 

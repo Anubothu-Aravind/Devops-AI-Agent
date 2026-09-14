@@ -19,28 +19,28 @@ Complete guide for deploying the DevOps AI Agents platform on Google Cloud Platf
 ### Required Tools
 
 1. **GCP Account**
-   - Active Google Cloud Platform account
-   - Billing enabled
-   - Project created
+ - Active Google Cloud Platform account
+ - Billing enabled
+ - Project created
 
 2. **Terraform** (>= 1.0)
-   ```bash
-   # Windows (Chocolatey)
-   choco install terraform
-   
-   # Or download from: https://www.terraform.io/downloads
-   ```
+ ```bash
+ # Windows (Chocolatey)
+ choco install terraform
+ 
+ # Or download from: https://www.terraform.io/downloads
+ ```
 
 3. **gcloud CLI**
-   ```bash
-   # Download from: https://cloud.google.com/sdk/docs/install
-   ```
+ ```bash
+ # Download from: https://cloud.google.com/sdk/docs/install
+ ```
 
 4. **Git**
-   ```bash
-   # Windows
-   choco install git
-   ```
+ ```bash
+ # Windows
+ choco install git
+ ```
 
 ### GCP Permissions
 
@@ -117,16 +117,16 @@ notepad terraform.tfvars
 
 ```hcl
 # terraform.tfvars
-project_id   = "your-gcp-project-id"
+project_id = "your-gcp-project-id"
 project_name = "devops-ai-agents"
-region       = "us-central1"
-zone         = "us-central1-a"
+region = "us-central1"
+zone = "us-central1-a"
 
 # Security: Restrict SSH to your IP
 allowed_ssh_ips = ["YOUR_IP_ADDRESS/32"]
 
 # Compute configuration
-machine_type   = "e2-medium"
+machine_type = "e2-medium"
 instance_count = 2
 
 # Optional: Enable database
@@ -159,7 +159,7 @@ allowed_ssh_ips = ["YOUR_IP/32"]
 
 ```hcl
 # Instance type
-machine_type = "e2-medium"  # 2 vCPU, 4GB RAM
+machine_type = "e2-medium" # 2 vCPU, 4GB RAM
 
 # Number of instances
 instance_count = 2
@@ -173,8 +173,8 @@ boot_image = "ubuntu-os-cloud/ubuntu-2204-lts"
 ```hcl
 # Enable Cloud SQL
 enable_database = true
-db_tier         = "db-f1-micro"
-database_name   = "devops_ai_agents"
+db_tier = "db-f1-micro"
+database_name = "devops_ai_agents"
 ```
 
 ### Environment Labels
@@ -183,9 +183,9 @@ database_name   = "devops_ai_agents"
 environment = "dev"
 
 labels = {
-  managed_by  = "terraform"
-  project     = "devops-ai-agents"
-  environment = "dev"
+ managed_by = "terraform"
+ project = "devops-ai-agents"
+ environment = "dev"
 }
 ```
 
@@ -290,18 +290,18 @@ start https://console.cloud.google.com/monitoring
 ### Key Metrics to Monitor
 
 1. **Instance Health**
-   - CPU utilization
-   - Memory usage
-   - Disk I/O
+ - CPU utilization
+ - Memory usage
+ - Disk I/O
 
 2. **Load Balancer**
-   - Request count
-   - Latency
-   - Error rate
+ - Request count
+ - Latency
+ - Error rate
 
 3. **Network**
-   - Ingress/Egress traffic
-   - NAT gateway usage
+ - Ingress/Egress traffic
+ - NAT gateway usage
 
 ### Alerts
 
@@ -315,11 +315,11 @@ The deployment includes:
 ```bash
 # Create custom alert
 gcloud alpha monitoring policies create \
-  --notification-channels=CHANNEL_ID \
-  --display-name="Custom Alert" \
-  --condition-display-name="Condition" \
-  --condition-threshold-value=0.9 \
-  --condition-threshold-duration=300s
+ --notification-channels=CHANNEL_ID \
+ --display-name="Custom Alert" \
+ --condition-display-name="Condition" \
+ --condition-threshold-value=0.9 \
+ --condition-threshold-duration=300s
 ```
 
 ## Troubleshooting
@@ -343,8 +343,8 @@ gcloud services enable compute.googleapis.com
 ```bash
 # Grant required roles
 gcloud projects add-iam-policy-binding PROJECT_ID \
-  --member="user:YOUR_EMAIL" \
-  --role="roles/editor"
+ --member="user:YOUR_EMAIL" \
+ --role="roles/editor"
 ```
 
 #### 3. Quota Exceeded
@@ -374,7 +374,7 @@ sudo journalctl -u devops-ai-agents -n 100
 ```bash
 # Check backend service
 gcloud compute backend-services get-health devops-ai-agents-backend \
-  --global
+ --global
 
 # Check firewall rules
 gcloud compute firewall-rules list
@@ -417,44 +417,44 @@ terraform state show google_compute_instance_template.app_template
 ### Cost Optimization Tips
 
 1. **Use Preemptible Instances**
-   ```hcl
-   # In instance template
-   scheduling {
-     preemptible = true
-   }
-   ```
+ ```hcl
+ # In instance template
+ scheduling {
+ preemptible = true
+ }
+ ```
 
 2. **Auto-scaling**
-   ```hcl
-   # Add autoscaler
-   resource "google_compute_region_autoscaler" "autoscaler" {
-     name   = "app-autoscaler"
-     target = google_compute_region_instance_group_manager.app_mig.id
-     
-     autoscaling_policy {
-       max_replicas    = 5
-       min_replicas    = 1
-       cooldown_period = 60
-       
-       cpu_utilization {
-         target = 0.7
-       }
-     }
-   }
-   ```
+ ```hcl
+ # Add autoscaler
+ resource "google_compute_region_autoscaler" "autoscaler" {
+ name = "app-autoscaler"
+ target = google_compute_region_instance_group_manager.app_mig.id
+ 
+ autoscaling_policy {
+ max_replicas = 5
+ min_replicas = 1
+ cooldown_period = 60
+ 
+ cpu_utilization {
+ target = 0.7
+ }
+ }
+ }
+ ```
 
 3. **Committed Use Discounts**
-   - Purchase 1-year or 3-year commitments
-   - Save up to 57% on compute costs
+ - Purchase 1-year or 3-year commitments
+ - Save up to 57% on compute costs
 
 4. **Budget Alerts**
-   ```bash
-   # Create budget alert
-   gcloud billing budgets create \
-     --billing-account=BILLING_ACCOUNT_ID \
-     --display-name="DevOps AI Agents Budget" \
-     --budget-amount=150
-   ```
+ ```bash
+ # Create budget alert
+ gcloud billing budgets create \
+ --billing-account=BILLING_ACCOUNT_ID \
+ --display-name="DevOps AI Agents Budget" \
+ --budget-amount=150
+ ```
 
 ### Monitor Costs
 
@@ -481,19 +481,19 @@ Add to `main.tf`:
 
 ```hcl
 resource "google_compute_region_autoscaler" "autoscaler" {
-  name   = "${var.project_name}-autoscaler"
-  region = var.region
-  target = google_compute_region_instance_group_manager.app_mig.id
+ name = "${var.project_name}-autoscaler"
+ region = var.region
+ target = google_compute_region_instance_group_manager.app_mig.id
 
-  autoscaling_policy {
-    max_replicas    = 10
-    min_replicas    = 2
-    cooldown_period = 60
+ autoscaling_policy {
+ max_replicas = 10
+ min_replicas = 2
+ cooldown_period = 60
 
-    cpu_utilization {
-      target = 0.7
-    }
-  }
+ cpu_utilization {
+ target = 0.7
+ }
+ }
 }
 ```
 
@@ -502,24 +502,24 @@ resource "google_compute_region_autoscaler" "autoscaler" {
 ### Backup Strategy
 
 1. **Terraform State**
-   ```bash
-   # Enable remote state
-   terraform {
-     backend "gcs" {
-       bucket = "your-terraform-state-bucket"
-       prefix = "terraform/state"
-     }
-   }
-   ```
+ ```bash
+ # Enable remote state
+ terraform {
+ backend "gcs" {
+ bucket = "your-terraform-state-bucket"
+ prefix = "terraform/state"
+ }
+ }
+ ```
 
 2. **Database Backups** (if enabled)
-   - Automated daily backups
-   - Point-in-time recovery
-   - 7-day retention
+ - Automated daily backups
+ - Point-in-time recovery
+ - 7-day retention
 
 3. **Application Data**
-   - Cloud Storage versioning enabled
-   - 90-day lifecycle policy
+ - Cloud Storage versioning enabled
+ - 90-day lifecycle policy
 
 ### Disaster Recovery
 
@@ -534,24 +534,24 @@ terraform state push terraform.tfstate.backup
 ## Security Best Practices
 
 1. **Network Security**
-   - Restrict SSH to known IPs
-   - Use private IPs for internal communication
-   - Enable VPC Flow Logs
+ - Restrict SSH to known IPs
+ - Use private IPs for internal communication
+ - Enable VPC Flow Logs
 
 2. **IAM**
-   - Use service accounts with minimal permissions
-   - Enable audit logging
-   - Regular access reviews
+ - Use service accounts with minimal permissions
+ - Enable audit logging
+ - Regular access reviews
 
 3. **Data Protection**
-   - Enable encryption at rest
-   - Use Secret Manager for sensitive data
-   - Regular security scans
+ - Enable encryption at rest
+ - Use Secret Manager for sensitive data
+ - Regular security scans
 
 4. **Compliance**
-   - Enable Cloud Security Command Center
-   - Regular vulnerability assessments
-   - Compliance monitoring
+ - Enable Cloud Security Command Center
+ - Regular vulnerability assessments
+ - Compliance monitoring
 
 ## Cleanup
 
@@ -570,20 +570,20 @@ terraform destroy
 ## Next Steps
 
 1. **Configure HTTPS**
-   - Set up SSL certificates
-   - Configure HTTPS load balancer
+ - Set up SSL certificates
+ - Configure HTTPS load balancer
 
 2. **Set up CI/CD**
-   - Integrate with Cloud Build
-   - Automate deployments
+ - Integrate with Cloud Build
+ - Automate deployments
 
 3. **Enable Monitoring**
-   - Set up custom dashboards
-   - Configure alerting
+ - Set up custom dashboards
+ - Configure alerting
 
 4. **Implement Backup**
-   - Regular state backups
-   - Database backup strategy
+ - Regular state backups
+ - Database backup strategy
 
 ## Additional Resources
 
